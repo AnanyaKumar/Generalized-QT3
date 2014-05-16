@@ -55,9 +55,9 @@ public class Board
 	public Board ( int m ) { this(m,2); } //Initialize the board to have m squares and 2 pieces played per turn
 	public Board () { this(9,2); } //Initialize the board to have 9 squares and 2 pieces played per turn
 	
-	/**
+	/******************************************
 	 * Methods for adding pieces onto the board
-	 **/
+	 ******************************************/
 	
 	public int howManyPieces () //How many pieces should a player play per turn
 	{
