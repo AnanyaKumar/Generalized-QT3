@@ -1,0 +1,60 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265
+\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 Error checking for collapse (Done)\
+Error checking for getMove (results in error when called with partial input)\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 Post code on Github\
+Create test cases\
+Document code\
+Write final AI\
+Implement save feature\
+Visualize entanglement\
+Start menu\
+Tutorial/training mode\
+Count game states for n > 2\
+Write entanglement detection code\
+Enabled != 2 pieces per turn\
+Utility function\
+Print history/replay game\
+\
+\
+2 classes\
+StoreMove\
+GetMove\
+ComputeMove\
+\
+StoreMove allows you to specify a certain depth to precompute until\
+It prints to a text file \'93precomputed.txt\'94\
+\
+precomputed.txt\
+A sequence of game-board, move pairs\
+Format:\
+<Piece 1 squares>\
+<Piece 2 squares>\
+\'85.\
+<newline>\
+<move>\
+The number of piece lines is variable, end of game-board denoted by a new line\
+Move either describes a \
+1. Move: \'931 5\'94 means play next piece on squares 1, 5\
+2. collapse: \'93C 5\'94 which means collapse latest piece to square 5\
+Eg:\
+1\
+1 2\
+2\
+\
+GetMove:\
+Check if board is in \'93precomputed.txt\'94 and if so return precomputed move\
+Otherwise, call ComputeMove to calculate next move\
+\
+ComputeMove:\
+Uses alpha-beta pruning and other optimisations to find the best possible move without any pre computation\
+\
+\
+\
+}
