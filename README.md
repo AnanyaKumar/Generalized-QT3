@@ -11,6 +11,6 @@ We generalized the game, devised a graph theoretic algorithm to
 efficiently implement the game, and analyzed the game's complexity
 and it's result in random play and perfect play situations.
 We presented our findings at the Intel International Science and
-Engineering Fair 2012, and were lucky enough to win a 2nd award!
+Engineering Fair 2012, and were lucky enough to win a 2nd grand award!
 
 Here are all the codes we wrote for our research.
